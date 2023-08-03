@@ -1,3 +1,5 @@
+// import { useParams } from 'react-router-dom';
+
 function Offer(): JSX.Element {
   return (
     <div className="page">

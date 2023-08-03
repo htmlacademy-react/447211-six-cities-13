@@ -4,7 +4,7 @@ type HomeProps = {
   countOffers: number;
 }
 
-function Home({countOffers: countOffers}: HomeProps): JSX.Element {
+function Home({ countOffers: countOffers }: HomeProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -95,7 +95,6 @@ function Home({countOffers: countOffers}: HomeProps): JSX.Element {
                 </ul>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                <CardCity/>
                 <CardCity/>
                 <CardCity/>
                 <CardCity/>
