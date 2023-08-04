@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 
 function Offer(): JSX.Element {
   return (
-    <div className="page">
+    <>
       <Header/>
       <main className="page__main page__main--offer">
         <section className="offer">
@@ -307,7 +307,7 @@ function Offer(): JSX.Element {
           </section>
         </div>
       </main>
-    </div>
+    </>
   );
 }
 

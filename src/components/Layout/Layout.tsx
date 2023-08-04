@@ -4,13 +4,23 @@ import Footer from '../Footer/Footes';
 
 function Layout(): JSX.Element {
   const location = useLocation();
-  console.log(location.pathname);
+  const pathName: string = location.pathname;
+  let pageClass = '';
+
+  switch (pathName) {
+    case '/':
+      pageClass = ' page--gray page--main';
+      break;
+    case '/login':
+      pageClass = ' page--gray page--login';
+      break;
+  }
 
   return (
-    <>
+    <div className={`page${pageClass}`}>
       <Outlet />
-      { location.pathname === '/favorites' ? <Footer /> : null }
-    </>
+      {location.pathname === '/favorites' ? <Footer /> : null}
+    </div>
   );
 }
 
