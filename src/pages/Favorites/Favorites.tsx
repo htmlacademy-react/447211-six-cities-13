@@ -1,5 +1,4 @@
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footes';
 
 function Favorites(): JSX.Element {
   return (
@@ -134,7 +133,6 @@ function Favorites(): JSX.Element {
           </section>
         </div>
       </main>
-      <Footer/>
     </div>
   );
 }
